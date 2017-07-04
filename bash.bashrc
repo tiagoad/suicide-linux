@@ -2,7 +2,7 @@
 
 # Set warning message
 echo " ========================================================="
-echo " WARNING: Suicide-Linx installed"
+echo " WARNING: Suicide-Linux installed"
 echo "          (http://sourceforge.net/projects/suicide-linux/)"
 echo " ========================================================="
 
