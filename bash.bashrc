@@ -1,10 +1,10 @@
 # System-wide .bashrc file for interactive bash(1) shells.
 
 # Set warning message
-echo " ========================================================="
+echo " ==================================="
 echo " WARNING: Suicide-Linux installed"
-echo "          (http://sourceforge.net/projects/suicide-linux/)"
-echo " ========================================================="
+echo "          (https://qntm.org/suicide)"
+echo " ==================================="
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
