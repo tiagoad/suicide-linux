@@ -13,6 +13,8 @@ With a single command, an instance of _Suicide Jessie_ will be downloaded and bo
 
 -- https://qntm.org/suicide
 
+![screenshot](/screenshot.png)
+
 Running
 -------
 
