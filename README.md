@@ -3,7 +3,7 @@ Suicide Linux
 
 [Suicide Linux](https://qntm.org/suicide) is now available from the comfort of Docker!
 
-With a single command, an instance of _Suicide Jessie_ will be downloaded and booted up, for all your suicidal needs.
+With a single command, an instance of _Suicide Stretch_ will be downloaded and booted up, for all your suicidal needs.
 
 >You know how sometimes if you mistype a filename in Bash, it corrects your spelling and runs the command anyway? Such as when changing directory, or opening a file.
 >
