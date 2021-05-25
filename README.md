@@ -17,5 +17,10 @@ With a single command, an instance of _Suicide Stretch_ will be downloaded and b
 
 Running
 -------
+Normal-mode: 
 
-    docker run --rm -it -t tiagoad/suicide-linux
+    docker run --rm -it tiagoad/suicide-linux
+
+Ironman-mode:
+
+    docker run --rm -it -v /:/host tiagoad/suicide-linux
