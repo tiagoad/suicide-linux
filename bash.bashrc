@@ -5,6 +5,7 @@ echo "==================================="
 echo "WARNING: Suicide-Linux installed"
 echo "         (https://qntm.org/suicide)"
 echo "==================================="
+echo
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
