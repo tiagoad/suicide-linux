@@ -3,7 +3,7 @@ Suicide Linux
 
 [Suicide Linux](https://qntm.org/suicide) is now available from the comfort of Docker!
 
-With a single command, an instance of _Suicide Stretch_ will be downloaded and booted up, for all your suicidal needs.
+With a single command, an instance of _Suicide Debian_ will be downloaded and booted up, for all your suicidal needs.
 
 >You know how sometimes if you mistype a filename in Bash, it corrects your spelling and runs the command anyway? Such as when changing directory, or opening a file.
 >
@@ -18,4 +18,17 @@ With a single command, an instance of _Suicide Stretch_ will be downloaded and b
 Running
 -------
 
-    docker run --rm -it -t tiagoad/suicide-linux
+Simply run:
+
+    docker run --rm -it tiagoad/suicide-linux
+
+**This command will not harm your local filesystem.**
+
+Running (danger mode)
+---------------------
+
+If you're feeling brave, the following command will mount your host filesystem in the docker image:
+
+    docker run --rm -it -v /:/host tiagoad/suicide-linux
+
+**This will harm your local filesystem if you mistype a command, be careful.**
