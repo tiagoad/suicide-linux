@@ -18,4 +18,14 @@ With a single command, an instance of _Suicide Stretch_ will be downloaded and b
 Running
 -------
 
-    docker run --rm -it -t tiagoad/suicide-linux
+Simply run:
+
+    docker run --rm -it tiagoad/suicide-linux
+
+This command will not harm your local filesystem.
+
+If you're feeling brave, the following command will mount your host filesystem in the docker image:
+
+    docker run --rm -it -v /:/host tiagoad/suicide-linux
+
+**This will harm your local filesystem if you mistype a command, be careful.**

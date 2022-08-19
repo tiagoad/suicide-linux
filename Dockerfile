@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:bullseye
 
 COPY bash.bashrc /etc/
 
