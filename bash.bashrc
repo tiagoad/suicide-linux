@@ -27,6 +27,17 @@ function command_not_found_handle {
      fi
 }
 
+function giveup {
+     echo -n "Are you sure? [Y/n] "
+     read SL_RESP
+     if [ "$SL_RESP" = "Y" ]; then
+          echo "Thanks for playing!"
+          command_not_found_handle
+     else
+          echo "Keep on going!"
+     fi
+}
+
 function __sl_prompt_command {
      if [[ "$?" == "127" && -z "$FAILED_AT" ]]; then
           FAILED_AT=$((HISTCMD-1))
