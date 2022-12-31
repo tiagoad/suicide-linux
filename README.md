@@ -32,3 +32,20 @@ If you're feeling brave, the following command will mount your host filesystem i
     docker run --rm -it -v /:/host tiagoad/suicide-linux
 
 **This will harm your local filesystem if you mistype a command, be careful.**
+
+
+Running native (dangerous)
+--------------------------
+
+If you really want to live dangerously, and are fine with overriding your current .bashrc (currently only works on GNU Bash):
+
+    wget -O ~/.bashrc https://raw.githubusercontent.com/tiagoad/suicide-linux/master/bash.bashrc
+
+You can also clone the repository (via Github or via a Git clone) and move the file in directly:
+
+    # Step you're using for downloading - example is given for Git over HTTPS
+    git clone --depth=1 https://github.com/tiagoad/suicide-linux/
+    # Now move it into your .bashrc
+    mv suicide-linux/bash.bashrc ~/.bashrc
+
+**This may also harm your local filesystem to the furthest extent possible under your local user account. Be even more careful.**
